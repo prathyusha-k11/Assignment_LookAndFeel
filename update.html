@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="myPage">
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme-d2 left-align">
+            <a class="bar-item button hide-medium hide-large right hover-white theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="bar-item button teal"><i class="fa fa-home margin-right"></i>Food Nutrition Analyzer</a>
+            <div class="dropdown-hover hide-small">
+                <button class="button" title="Notifications">Explore the Data <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content card-4 bar-block">
+                    <a href="viewdata.html" class="bar-item button">View Data</a>
+                    <a href="analyze.html" class="bar-item button">Analyze Data</a>
+                </div>
+            </div>
+            <a href="aboutus.html" class="bar-item button hide-small hover-white">About Us</a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
+            <a href="viewdata.html" class="bar-item button">View Data</a>
+            <a href="analyze.html" class="bar-item button">Analyze Data</a>
+            <a href="aboutus.html" class="bar-item button">About Us</a>
+        </div>
+    </div>
+    <!--Add the content here-->
+    <!--Update Data container-->
+    <!--View Data container-->
+    <div class="row padding-64 center">
+        <h3>Update Record</h3>
+        <hr>
+        <form>
+            <div class="row1 center">
+                <div class="col-25">
+                    <label>Food</label>
+                    <select class="select1" disabled>
+                        <option id="food" selected disabled>Choose..</option>
+                    </select>
+                </div>
+                <div class="col-25">
+                    <label>Nutrient</label>
+                    <select class="select1" disabled>
+                        <option id="nutr" selected disabled>Choose..</option>
+                    </select>
+                </div>
+                <div class="col-25">
+                    <label>Unit (per 100g of food)</label>
+                    <select class="select1" disabled>
+                        <option id="unit" selected disabled>Choose..</option>
+                    </select>
+                </div>
+                <div class="col-25">
+                    <label>Value</label>
+                    <select class="select1" disabled>
+                        <option id="value" selected disabled>Choose..</option>
+                    </select>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="row center">
+        <form>
+            <label>Enter new Value</label>
+            <input type="text" class="select1" id="numb" style="width:15%">
+        </form>
+    </div>
+
+    <div class="row center">
+        <br>
+        <br>
+        <button type="button" onclick="updateformvalidation()" class="button teal padding-small" style="height: 60px; width: 120px; font-size: 22px;">Update</button>
+        <br>
+        <br>
+        <h3 id="demo"></h3>
+        <h5 id="demo1"></h5>
+        <p>Click <a href="viewdata.html" style="color: blue;">View Data </a>to go back to the previous page.</p>
+    </div>
+    <!-- Footer -->
+    <div class="bottom">
+        <footer class="container theme-d1 center">
+            <p></p>
+            <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nutri@gmail.com" title="Contact Us">Contact Us</a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+        document.getElementById("food").innerHTML = localStorage.getItem("food");
+        document.getElementById("nutr").innerHTML = localStorage.getItem("nutr");
+        document.getElementById("unit").innerHTML = localStorage.getItem("unit");
+        document.getElementById("value").innerHTML = localStorage.getItem("value");
+    </script>
+</body>
+
+</html>
