@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body, html {
+            height: 100%
+        }
 
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+
+        .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/w3images/pizza.jpg");
+            min-height: 90%;
+        }
+    </style>
+</head>
 <body id="myPage">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="viewdata.html" class="w3-bar-item w3-button">View Data</a>
+            <a href="analyze.html" class="w3-bar-item w3-button">Analyze Data</a>
+            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        </div>
+    </div>
     <!-- Navbar -->
     <div class="top">
-        <div class="bar theme-d2 left-align">
+        <!--<div class="bar theme-d2 left-align">
             <a class="bar-item button hide-medium hide-large right hover-white theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="index.html" class="bar-item button teal"><i class="fa fa-home margin-right"></i>Food Nutrition Analyzer</a>
             <div class="dropdown-hover hide-small">
@@ -20,46 +50,48 @@
                 </div>
             </div>
             <a href="aboutus.html" class="bar-item button hide-small hover-white">About Us</a>
-        </div>
+        </div>-->
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
+        <!--<div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
             <a href="viewdata.html" class="bar-item button">View Data</a>
             <a href="analyze.html" class="bar-item button">Analyze Data</a>
             <a href="aboutus.html" class="bar-item button">About Us</a>
-        </div>
+        </div>-->
     </div>
-    <div class="row">
+    <!--<div class="row">
         <img src="img/food.jpg" style="width: 100%; max-height: 300px;">
-    </div>
+    </div>-->
     <!--Add the content here-->
-    <div class="container center" , id="siteoverview">
-        <div class="row center">
-            <h3>Site Overview</h3>
-            <h5>Welcome to Food Nutrition Analyzer &#33;</h5>
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" , id="about">
+        <div class="w3-content">
+            <div class="row center">
+                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Site Overview</h1>
+                    <h3>Welcome &#33;</h3>
+            </div>
+            <div class="row">
+                <p>Most people know good nutrition and physical activity can help maintain a healthy weight. But the benefits of good nutrition go beyond weight. Good nutrition can help to reduce high blood pressure, lower high cholesterol, improve your well-being,improve you ability to fight off illness and increase your energy levels. </p>
+                <p>But, the major problem we face is how do we know what food has the good nutrients. This site helps answer that question. It gathers data from the <a href="https://fdc.nal.usda.gov/" style="color: blue">U.S Government Food Database</a>. It analyzes all the food avaialble in U.S and shows the type and quantity of nutrients the food contains.</p>
+                <p> You can <a href="viewdata.html" style="color: blue">View Data </a> and perform the CRUD operations. Also, you can <a href="analyze.html" style="color: blue">analyze </a>what food has maximum nutrient value of a particular type. You can find these tabs within the <b>Explore the Data</b> tab. </p>
+                <br>
+            </div>
+            <div class="row center">
+                <h6>This site was created as part of group assignment for the course ISM 6225 - Distributed Information Systems. </h6>
+                <h6>See the <a href="aboutus.html" style="color: blue">About Us </a> page for more information.</h6>
+            </div>
         </div>
-        <div class="row">
-            <p>Most people know good nutrition and physical activity can help maintain a healthy weight. But the benefits of good nutrition go beyond weight. Good nutrition can help to reduce high blood pressure, lower high cholesterol, improve your well-being,improve you ability to fight off illness and increase your energy levels. </p>
-            <p>But, the major problem we face is how do we know what food has the good nutrients. This site helps answer that question. It gathers data from the <a href="https://fdc.nal.usda.gov/" style="color: blue">U.S Government Food Database</a>. It analyzes all the food avaialble in U.S and shows the type and quantity of nutrients the food contains.</p>
-            <p> You can <a href="viewdata.html" style="color: blue">View Data </a> and perform the CRUD operations. Also, you can <a href="analyze.html" style="color: blue">analyze </a>what food has maximum nutrient value of a particular type. You can find these tabs within the <b>Explore the Data</b> tab. </p>
+    </div>
+        <div class="row padding-64">
             <br>
         </div>
-        <div class="row center">
-            <h6>This site was created as part of group assignment for the course ISM 6225 - Distributed Information Systems. </h6>
-            <h6>See the <a href="aboutus.html" style="color: blue">About Us </a> page for more information.</h6>
+        <!-- Footer -->
+        <div class="bottom">
+            <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+               
+                <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nutri@gmail.com" title="Contact Us">Contact Us</a>
+            </footer>
         </div>
-    </div>
-    <div class="row padding-64">
-        <br>
-    </div>
-    <!-- Footer -->
-    <div class="bottom">
-        <footer class="container theme-d1 center">
-            <p></p>
-            <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nutri@gmail.com" title="Contact Us">Contact Us</a>
-        </footer>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="js/Chart.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/Chart.min.js"></script>
 </body>
 
 </html>
