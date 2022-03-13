@@ -53,26 +53,37 @@
                     <div>
                         <span>
                             <label style="font-weight: bold">Food</label>
-                            <tr>
-                                <td id="food">Apple</td>
-                            </tr>
-                        </span>
-                        <span>
-                            <label style="font-weight: bold">Nutrient</label>
-                            <select class="select1">
-                                <option id="nutr" selected>Choose..</option>
-                                <option id="nutr" selected>Protiens</option>
-                                <option id="nutr" selected>Carbohydrates</option>
-                                <option id="nutr" selected>Fats</option>
-                                <option id="nutr" selected>Sugars</option>
-                                <option id="nutr" selected>Energy</option>
+                            <select class="select1" disabled>
+                                <option id="food" selected disabled>Choose..</option>
                             </select>
                         </span>
                         <span>
-                            <label style="font-weight: bold">Value</label>
-                            <tr>
-                                <td id="value">200</td>
-                            </tr>
+                            <label style="font-weight: bold">Protiens</label>
+                            <input type="text" class="select1" size="4" id="prot"/>
+                                
+                            
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Carbohydrates</label>
+                            <input type="text" class="select1" size="4" id="carb">
+                                
+                            
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Fats</label>
+                            <input type="text" class="select1" size="4" id="fat">
+                                
+                            
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Sugar</label>
+                            <input type="text" class="select1" size="4" id="sug">
+                                
+                            
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Energy</label>
+                            <input type="text" class="select1" size="4" id="eng">
                         </span>
                     </div>
 
@@ -86,10 +97,7 @@
 
             <div class="w3-row w3-center">
                 <div>
-                    <form>
-                        <label>Enter new Value</label>
-                        <input type="text" class="select1" id="numb" style="width:15%">
-                    </form>
+                    
                     <br>
 
                     <button type="button" onclick="updateformvalidation()" class="button teal padding-small" style="height: 60px; width: 120px; font-size: 22px;">Update</button>
@@ -120,9 +128,12 @@
     <script src="js/Chart.min.js"></script>
     <script>
         document.getElementById("food").innerHTML = localStorage.getItem("food");
-        document.getElementById("nutr").innerHTML = localStorage.getItem("nutr");
-        document.getElementById("unit").innerHTML = localStorage.getItem("unit");
-        document.getElementById("value").innerHTML = localStorage.getItem("value");
+        
+        document.getElementById("prot").value = localStorage.getItem("prot");
+        document.getElementById("carb").value = localStorage.getItem("carb");
+        document.getElementById("fat").value = localStorage.getItem("fat");
+        document.getElementById("sug").value = localStorage.getItem("sug");
+        document.getElementById("eng").value = localStorage.getItem("eng");
     </script>
 </body>
 

@@ -41,20 +41,30 @@ function myFunction() {
 }
 
 function createformvalidation() {
-	var x, x1, x2, x3, text, text1, unit, value, nutrient, food, check;
-
+	
+	var x, x1, x2, x3, x4, x5, text, text1;
+	var l = [];
 	// Get the value of the input field with id="numb"
-	x = document.getElementById("numb").value;
-	x1 = document.getElementById("unit").value;
-	x2 = document.getElementById("nutrient").value;
-	x3 = document.getElementById("food").value;
+	x1 = document.getElementById("prot").value;
+	x2 = document.getElementById("carb").value;
+	x3 = document.getElementById("fat").value;
+	x4 = document.getElementById("sug").value;
+	x5 = document.getElementById("eng").value;
+	l.push(x1);
+	l.push(x2);
+	l.push(x3);
+	l.push(x4);
+	l.push(x5);
 	// If x is Not a Number or less than one or greater than 10
-	if (isNaN(x) || x < 0 || x > 1000000 || !(x1) || !(x2) || !(x3) || !(x)) {
-		text = "Record not Created";
-		text1 = "Please provide input for all fields and make sure the Value field is numeric";
-	} else {
-		text = "Record Created Successfully";
-		text1 = ""
+	for (let x in l) {
+		if (isNaN(x) || x < 0 || x > 1000000 || !(x1) || !(x2) || !(x3) || !(x)) {
+			text = "Record not Created";
+			text1 = "Please provide input for all fields and make sure the Value field is numeric";
+			break;
+		} else {
+			text = "Record Created Successfully";
+			text1 = ""
+		}
 	}
 	document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo1").innerHTML = text1;
@@ -79,18 +89,30 @@ function deleteformvalidation() {
 	document.getElementById("demo1").innerHTML = text1;
 }
 function updateformvalidation() {
-	var x, text, text1;
-
+	var x, x1, x2, x3, x4, x5, text, text1;
+	var l = [];
 	// Get the value of the input field with id="numb"
-	x = document.getElementById("numb").value;
+	x1 = document.getElementById("prot").value;
+	x2 = document.getElementById("carb").value;
+	x3 = document.getElementById("fat").value;
+	x4 = document.getElementById("sug").value;
+	x5 = document.getElementById("eng").value;
+	l.push(x1);
+	l.push(x2);
+	l.push(x3);
+	l.push(x4);
+	l.push(x5);
 
 	// If x is Not a Number or less than one or greater than 10
-	if (isNaN(x) || x < 0 || x > 1000000 || !(x)) {
-		text = "Record not Updated";
-		text1 = "Please make sure the Value field is numeric";
-	} else {
-		text = "Record Updated Successfully";
-		text1 = ""
+	for (let x in l) {
+		if (isNaN(x) || x < 0 || x > 1000000 || !(x)) {
+			text = "Record not Updated";
+			text1 = "Please make sure the Value field is numeric";
+			break;
+		} else {
+			text = "Record Updated Successfully";
+			text1 = ""
+		}
 	}
 	document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo1").innerHTML = text1;
@@ -99,19 +121,23 @@ function updateformvalidation() {
 
 
 function togetvalue(ele) {
-	var food, nutr, unit, value;
+	var food, prot, carb, fat, sug, eng;
 	localStorage.setItem("food", ele.parentNode.parentNode.children[0].innerHTML);
-	localStorage.setItem("nutr", ele.parentNode.parentNode.children[1].innerHTML);
-	localStorage.setItem("unit", ele.parentNode.parentNode.children[2].innerHTML);
-	localStorage.setItem("value", ele.parentNode.parentNode.children[3].innerHTML);
+	localStorage.setItem("prot", ele.parentNode.parentNode.children[1].innerHTML);
+	localStorage.setItem("carb", ele.parentNode.parentNode.children[2].innerHTML);
+	localStorage.setItem("fat", ele.parentNode.parentNode.children[3].innerHTML);
+	localStorage.setItem("sug", ele.parentNode.parentNode.children[4].innerHTML);
+	localStorage.setItem("eng", ele.parentNode.parentNode.children[5].innerHTML);
 }
 
 function todeletevalue(ele) {
-	var food, nutr, unit, value;
+	var food, prot, carb, fat, sug, eng;
 	localStorage.setItem("food", ele.parentNode.parentNode.children[0].innerHTML);
-	localStorage.setItem("nutr", ele.parentNode.parentNode.children[1].innerHTML);
-	localStorage.setItem("unit", ele.parentNode.parentNode.children[2].innerHTML);
-	localStorage.setItem("value", ele.parentNode.parentNode.children[3].innerHTML);
+	localStorage.setItem("prot", ele.parentNode.parentNode.children[1].innerHTML);
+	localStorage.setItem("carb", ele.parentNode.parentNode.children[2].innerHTML);
+	localStorage.setItem("fat", ele.parentNode.parentNode.children[3].innerHTML);
+	localStorage.setItem("sug", ele.parentNode.parentNode.children[4].innerHTML);
+	localStorage.setItem("eng", ele.parentNode.parentNode.children[5].innerHTML);
 }
 
 
