@@ -73,21 +73,18 @@ function createformvalidation() {
 
 function deleteformvalidation() {
 	var x, text, text1;
-
-	// Get the value of the input field with id="numb"
-	x = document.getElementById("numb").value;
-
-	// If x is Not a Number or less than one or greater than 10
-	if (x != "Yes") {
-		text = "Record not Deleted";
-		text1 = "Please input Yes as shown above";
-	} else {
+	var res = confirm("Are you sure you want to delete the record?")
+	if (res) {
 		text = "Record Deleted Successfully";
-		text1 = ""
+		text1 = "";
+	} else {
+		text = "Record not Deleted";
+		text1 = "Please select Yes to delete.";
 	}
 	document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo1").innerHTML = text1;
 }
+
 function updateformvalidation() {
 	var x, x1, x2, x3, x4, x5, text, text1;
 	var l = [];
