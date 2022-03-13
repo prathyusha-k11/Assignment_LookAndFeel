@@ -42,87 +42,88 @@
     <!--Add the content here-->
     <!--Update Data container-->
     <!--View Data container-->
-    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" , id="menu">
+    <div class="w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge" , id="menu">
         <div class="w3-content">
             <h3>Update Record</h3>
             <hr>
             <form>
                 <div class="w3-row w3-center">
 
-                    <a>
 
-                        <label>Food</label>
-                        <select class="select1" disabled>
-                            <option id="food" selected disabled>Choose..</option>
-                        </select>
+                    <div>
+                        <span>
+                            <label style="font-weight: bold">Food</label>
+                            <tr>
+                                <td id="food">Apple</td>
+                            </tr>
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Nutrient</label>
+                            <select class="select1">
+                                <option id="nutr" selected>Choose..</option>
+                                <option id="nutr" selected>Protiens</option>
+                                <option id="nutr" selected>Carbohydrates</option>
+                                <option id="nutr" selected>Fats</option>
+                                <option id="nutr" selected>Sugars</option>
+                                <option id="nutr" selected>Energy</option>
+                            </select>
+                        </span>
+                        <span>
+                            <label style="font-weight: bold">Value</label>
+                            <tr>
+                                <td id="value">200</td>
+                            </tr>
+                        </span>
+                    </div>
 
-                    </a>
-                    <a>
-
-                        <label>Nutrient</label>
-                        <select class="select1">
-                            <option id="nutr" selected>Choose..</option>
-                            <option id="nutr" selected>Protiens</option>
-                            <option id="nutr" selected>Carbohydrates</option>
-                            <option id="nutr" selected>Fats</option>
-                            <option id="nutr" selected>Sugars</option>
-                            <option id="nutr" selected>Energy</option>
-                        </select>
-
-                    </a>
-                    <a>
-
-                        <label>Value</label>
-                        <select class="select1" disabled>
-                            <option id="value" selected disabled>Choose..</option>
-                        </select>
-
-                    </a>
-                    <br />
+                    <br>
 
 
                 </div>
 
             </form>
+            <br>
+
             <div class="w3-row w3-center">
-                
+                <div>
                     <form>
                         <label>Enter new Value</label>
                         <input type="text" class="select1" id="numb" style="width:15%">
                     </form>
-                
-                
-                
+                    <br>
 
                     <button type="button" onclick="updateformvalidation()" class="button teal padding-small" style="height: 60px; width: 120px; font-size: 22px;">Update</button>
                     <br>
                     <br>
-                    <h3 id="demo"></h3>
-                    <h5 id="demo1"></h5>
-                    <p>Click <a href="viewdata.html" style="color: blue;">View Data </a>to go back to the previous page.</p>
-                
                 </div>
             </div>
-
-
+            <h3 id="demo"></h3>
+            <h5 id="demo1"></h5>
+            <p>Click <a href="viewdata.html" style="color: blue;">View Data </a>to go back to the previous page.</p>
 
         </div>
-        <!-- Footer -->
 
-        <div class="bottom">
-            <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-                <p></p>
-                <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nutri@gmail.com" title="Contact Us">Contact Us</a>
-            </footer>
-        </div>
-        <script src="js/script.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script>
-            document.getElementById("food").innerHTML = localStorage.getItem("food");
-            document.getElementById("nutr").innerHTML = localStorage.getItem("nutr");
-            document.getElementById("unit").innerHTML = localStorage.getItem("unit");
-            document.getElementById("value").innerHTML = localStorage.getItem("value");
-        </script>
+
+
+    </div>
+    <!-- Footer -->
+    <div class="row padding-64">
+        <br>
+    </div>
+    <div class="bottom">
+        <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+            
+            <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nutri@gmail.com" title="Contact Us">Contact Us</a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+        document.getElementById("food").innerHTML = localStorage.getItem("food");
+        document.getElementById("nutr").innerHTML = localStorage.getItem("nutr");
+        document.getElementById("unit").innerHTML = localStorage.getItem("unit");
+        document.getElementById("value").innerHTML = localStorage.getItem("value");
+    </script>
 </body>
 
 </html>
