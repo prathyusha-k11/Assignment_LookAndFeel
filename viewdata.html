@@ -44,7 +44,7 @@
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Explore the Food - Nutrients Data</h1>
             <div class="row">
                 <p>Create, Read, Update and Delete Operations</p>
-                <a href="create.html" style="color: blue;">Create New Record</a>
+                <a href="create.html" style="color: blue;">Add Item</a>
             </div>
                 <div class="panel">
                     <div class="row-padding">
@@ -56,17 +56,23 @@
                             <table class="table striped white" style="margin-left:auto;margin-right:auto;" id="t_id">
                                 <tr style="border-bottom: 1px solid gray;border-top: 1px solid gray;word-break:break-all;">
                                     <th style="font-weight: bold"> Food Description</th>
-                                    <th style="font-weight: bold"> Nutrient Type</th>
-                                    <th style="font-weight: bold;">Unit (per 100g of food)</th>
-                                    <th style="font-weight: bold;">Value</th>
-                                    <th style="color: white;">hi</th>
+                                    <th style="font-weight: bold"> Quantity</th>
+                                    <th style="font-weight: bold"> Protiens</th>
+                                    <th style="font-weight: bold;"> Carbohydrates</th>
+                                    <th style="font-weight: bold;"> Fats</th>
+                                    <th style="font-weight: bold;"> Sugar</th>
+                                    <th style="font-weight: bold;"> Energy</th>
+                                    <th style="color: white;"></th>
                                     <th></th>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Waffles, buttermilk, frozen, ready-to-heat</td>
-                                    <td id="r_nutr">Vitamin B-12</td>
-                                    <td id="r_unit">UG</td>
-                                    <td id="r_value">2.86</td>
+                                    <td id="r_food">Apple</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">0.0</td>
+                                    <td id="r_carb">14.3</td>
+                                    <td id="r_fat">0.65</td>
+                                    <td id="r_sug">10.4</td>
+                                    <td id="r_eng">52.0</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -74,10 +80,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Waffles, buttermilk, frozen, ready-to-heat</td>
-                                    <td id="r_nutr">Protein</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">6.58</td>
+                                    <td id="r_food">3 Musketeers Truffle Crisp Bar</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">6.41</td>
+                                    <td id="r_carb">28.8</td>
+                                    <td id="r_fat">63.2</td>
+                                    <td id="r_sug">57.7</td>
+                                    <td id="r_eng">538</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -85,10 +94,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Waffles, buttermilk, frozen, ready-to-heat</td>
-                                    <td id="r_nutr">Sugars</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">4.3</td>
+                                    <td id="r_food">Acerola juice, raw</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">0.4</td>
+                                    <td id="r_carb">4.8</td>
+                                    <td id="r_fat">0.3</td>
+                                    <td id="r_sug">4.5</td>
+                                    <td id="r_eng">23</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -96,10 +108,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Waffles, buttermilk, frozen, ready-to-heat</td>
-                                    <td id="r_nutr">Carbohydrate</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">41.05</td>
+                                    <td id="r_food">Acerola, (west indian cherry), raw</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">0.4</td>
+                                    <td id="r_carb">7.69</td>
+                                    <td id="r_fat">0.3</td>
+                                    <td id="r_sug">0.0</td>
+                                    <td id="r_eng">32</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -107,10 +122,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Tostada shells, corn</td>
-                                    <td id="r_nutr">Carbohydrate</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">64.43</td>
+                                    <td id="r_food">Acorn stew (Apache)</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">6.81</td>
+                                    <td id="r_carb">9.22</td>
+                                    <td id="r_fat">3.47</td>
+                                    <td id="r_sug">0.34</td>
+                                    <td id="r_eng">32</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -118,10 +136,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Tostada shells, corn</td>
-                                    <td id="r_nutr">Protein</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">6.13</td>
+                                    <td id="r_food">Noodles</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">11.1</td>
+                                    <td id="r_carb">77.8</td>
+                                    <td id="r_fat">1.85</td>
+                                    <td id="r_sug">1.85</td>
+                                    <td id="r_eng">370</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -129,10 +150,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Tostada shells, corn</td>
-                                    <td id="r_nutr">Calcium, Ca</td>
-                                    <td id="r_unit">MG</td>
-                                    <td id="r_value">76</td>
+                                    <td id="r_food">Rice</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">3.47</td>
+                                    <td id="r_carb">26.4</td>
+                                    <td id="r_fat">2.43</td>
+                                    <td id="r_sug">1.39</td>
+                                    <td id="r_eng">139</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
@@ -140,10 +164,13 @@
                                     </td>
                                 </tr>
                                 <tr style="word-break:break-all;">
-                                    <td id="r_food">Bagels, wheat</td>
-                                    <td id="r_nutr">Protein</td>
-                                    <td id="r_unit">G</td>
-                                    <td id="r_value">10.20</td>
+                                    <td id="r_food">ECLAIR ICECREAM BARS, CHOCOLATE</td>
+                                    <td id="r_unit">1</td>
+                                    <td id="r_prot">2.74</td>
+                                    <td id="r_carb">28.8</td>
+                                    <td id="r_fat">13.7</td>
+                                    <td id="r_sug">23.3</td>
+                                    <td id="r_eng">247</td>
                                     <td></td>
                                     <td class="edit_row">
                                         <a href="update.html" onclick=togetvalue(this)><button onclick=togetvalue(this) class="button teal padding-small"><i>Update</i></button></a>
