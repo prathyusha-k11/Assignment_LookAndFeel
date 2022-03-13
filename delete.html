@@ -7,14 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body {
+            margin: 0px !important;
+        }
+        body, h1, h2, h3, h4, h5, h6, label {
+            font-family: "Amatic SC", sans-serif
+        }
+        .page-btn {
+            color:black !important;
+            background-color: white !important;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 
 <body id="myPage">
     <!-- Navbar -->
-    <div class="top">
+    <div class="top w3-xlarge">
         <div class="bar theme-d2 left-align">
             <a class="bar-item button hide-medium hide-large right hover-white theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="index.html" class="bar-item button teal"><i class="fa fa-home margin-right"></i>Food Nutrition Analyzer</a>
+            <a href="index.html" class="bar-item button"><i class="fa fa-home margin-right"></i>Food Nutrition Analyzer</a>
             <div class="dropdown-hover hide-small">
                 <button class="button" title="Notifications">Explore the Data <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content card-4 bar-block">
@@ -34,44 +49,40 @@
     <!--Add the content here-->
     <!--Update Data container-->
     <!--View Data container-->
-    <div class="row padding-64 center">
-        <h3>Delete Record</h3>
+    <div class="row center w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge">
+        <h1>Delete Record</h1>
         <hr>
         <div class="row1 center">
             <div class="col-25">
-                <label>Food</label>
+                <label>Food Description</label>
                 <select class="select1" disabled>
                     <option id="food" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
-                <label>Nutrient</label>
+                <label>Protein</label>
                 <select class="select1" disabled>
-                    <option id="nutr" selected disabled>Choose..</option>
+                    <option id="protein" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
-                <label>Unit (per 100g of food)</label>
+                <label>Carbohydrates</label>
                 <select class="select1" disabled>
-                    <option id="unit" selected disabled>Choose..</option>
+                    <option id="carbohydrate" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
-                <label>Value</label>
+                <label>Fats</label>
                 <select class="select1" disabled>
-                    <option id="value" selected disabled>Choose..</option>
+                    <option id="fats" selected disabled>Choose..</option>
                 </select>
             </div>
         </div>
         <br>
-        <div class="row center">
-            <label>Type "Yes" to Confirm</label>
-            <input type="text" class="select1" style="width:10%" , id="numb">
-        </div>
         </form>
         <br>
         <br>
-        <button type="button" onclick="deleteformvalidation()" class="button teal padding-small" style="height: 60px; width: 120px; font-size: 22px;">Delete</button>
+        <button type="button" onclick="deleteformvalidation()" class="button padding-small page-btn" style="height: 60px; width: 120px; font-size: 22px;">Delete</button>
         <br>
         <br>
         <h3 id="demo"></h3>
