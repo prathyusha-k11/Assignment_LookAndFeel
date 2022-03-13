@@ -5,6 +5,8 @@
     <title>Update Data</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <style>
@@ -19,7 +21,11 @@
         .menu {
             display: none
         }
-
+        .page-btn {
+            color: black !important;
+            background-color: white !important;
+            border-radius: 2px;
+        }
         .bgimg {
             background-repeat: no-repeat;
             background-size: cover;
@@ -31,61 +37,70 @@
 
 <body id="myPage">
     <!-- Navbar -->
-    <div class="w3-top w3-hide-small">
-        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-            <a href="viewdata.html" class="w3-bar-item w3-button">View Data</a>
-            <a href="analyze.html" class="w3-bar-item w3-button">Analyze Data</a>
-            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+    <div class="top w3-xlarge">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off bar">
+            <a class="bar-item button hide-medium hide-large right hover-white theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="bar-item button"><i class="fa fa-home margin-right"></i>Home</a>
+
+            <a href="viewdata.html" class="bar-item button">View Data</a>
+            <a href="analyze.html" class="bar-item button">Analyze Data</a>
+
+            <a href="aboutus.html" class="bar-item button hide-small hover-white">About Us</a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
+            <a href="viewdata.html" class="bar-item button">View Data</a>
+            <a href="analyze.html" class="bar-item button">Analyze Data</a>
+            <a href="aboutus.html" class="bar-item button">About Us</a>
         </div>
     </div>
     <!--Add the content here-->
     <!--Update Data container-->
     <!--View Data container-->
-    <div class="w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge" , id="menu">
-        <div class="w3-content">
+    <div class="row center w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge" , id="menu">
+        
             <h3>Update Record</h3>
             <hr>
             <form>
-                <div class="w3-row w3-center">
+                <div class="row1 center">
 
 
-                    <div>
-                        <span>
+                    
+                        <div class="col-25">
                             <label style="font-weight: bold">Food</label>
                             <select class="select1" disabled>
                                 <option id="food" selected disabled>Choose..</option>
                             </select>
-                        </span>
-                        <span>
+                            </div>
+                        <div class="col-25">
                             <label style="font-weight: bold">Protiens</label>
-                            <input type="text" class="select1" size="4" id="prot"/>
-                                
-                            
-                        </span>
-                        <span>
+                            <input type="text" class="select1" size="4" id="prot" />
+
+
+                            </div>
+                        <div class="col-25">
                             <label style="font-weight: bold">Carbohydrates</label>
                             <input type="text" class="select1" size="4" id="carb">
-                                
-                            
-                        </span>
-                        <span>
+
+
+                            </div>
+                        <div class="col-25">
                             <label style="font-weight: bold">Fats</label>
                             <input type="text" class="select1" size="4" id="fat">
-                                
-                            
-                        </span>
-                        <span>
+
+
+                            </div>
+                        <div class="col-25">
                             <label style="font-weight: bold">Sugar</label>
                             <input type="text" class="select1" size="4" id="sug">
-                                
-                            
-                        </span>
-                        <span>
+
+
+                            </div>
+                        <div class="col-25">
                             <label style="font-weight: bold">Energy</label>
                             <input type="text" class="select1" size="4" id="eng">
-                        </span>
-                    </div>
+                            </div>
+                        
 
                     <br>
 
@@ -99,7 +114,7 @@
                 <div>
                     
                     <br>
-
+                    <br>
                     <button type="button" onclick="updateformvalidation()" class="button teal padding-small" style="height: 60px; width: 120px; font-size: 22px;">Update</button>
                     <br>
                     <br>
@@ -108,16 +123,14 @@
             <h3 id="demo"></h3>
             <h5 id="demo1"></h5>
             <p>Click <a href="viewdata.html" style="color: blue;">View Data </a>to go back to the previous page.</p>
-
-        </div>
+        <br>
+        
 
 
 
     </div>
     <!-- Footer -->
-    <div class="row padding-64">
-        <br>
-    </div>
+    
     <div class="bottom">
         <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
             

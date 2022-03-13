@@ -905,8 +905,7 @@ a {
     }
 }
 
-.top,
-.bottom {
+.top {
     position: fixed;
     width: 100%;
     z-index: 1
@@ -1539,8 +1538,8 @@ a {
 }
 
 .col-25 {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
+    -ms-flex: 16%; /* IE10 */
+    flex: 16%;
 }
 
 .col-50 {
