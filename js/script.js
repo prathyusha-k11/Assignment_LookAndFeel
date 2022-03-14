@@ -140,15 +140,15 @@ function todeletevalue(ele) {
 
 //chart js --- chart for analyze tab
 var dataObjects = [{
-	food: ["Beverages, Protein powder whey based", "Egg, white, dried", "Egg, white, dried, powder, stabilized, glucose reduced", "Egg, white, dried, stabilized, glucose reduced", "Egg, whole, dried", "Gelatins, dry powder, unsweetened", "Seal, bearded (Oogruk), meat, dried", "Soy protein isolate", "Soy protein isolate, potassium type", "Steelhead trout, dried, flesh (Shoshone Bannock)"],
+	food: ["100 GRAND Bar", "3 MUSKETEERS Bar", "3 Musketeers Truffle Crisp Bar", "Abalone, cooked, NS as to cooking method", "Abalone, floured or breaded, fried", "Abalone, steamed or poached", "Abiyuch, raw", "Acerola juice, raw", "Acerola, (west indian cherry), raw", "Acorn stew"],
 	label: "Protein(G)",
 	data: [161, 96.15, 88.32, 88.32, 85.6, 84.08, 82.4, 82.4, 78.13, 77.27]
 }, {
-	food: ["Sugars, granulated", "Figs, dried, uncooked", "Sweetener, herbal extract powder from Stevia leaf", "Sweeteners, tabletop, fructose, dry, powder", "Sugar, turbinado", "Sugars, powdered", "CAPUTO, POTATO GNOCCHI", "Sweeteners, for baking, contains sugar and sucralose", "Strawberry-flavor beverage mix, powder", "Desserts, rennin, vanilla, dry mix"],
+	food: ["Adobo, with noodles", "Adobo, with rice", "Agave liquid sweetener", "Agave, cooked (Southwest)", "Agave, dried (Southwest)", "Agave, raw (Southwest)", "Agutuk, fish with shortening (Alaskan ice cream) (Alaska Native)", "Agutuk, fish/berry with seal oil (Alaskan ice cream) (Alaska Native)", "Agutuk, meat-caribou (Alaskan ice cream) (Alaska Native)", "Air filled fritter or fried puff, without syrup, Puerto Rican style"],
 	label: "Carbohydrate(G)",
 	data: [199.58, 127.77, 100, 100, 99.8, 99.77, 99.6, 99.53, 99.1, 99]
 }, {
-	food: ["Sugars, granulated", "Sugar, turbinado", "Sugars, powdered", "Beverages, Whiskey sour mix, powder", "Beverages, lemonade-flavor drink, powder", "Sugars, brown", "Strawberry-flavor beverage mix, powder", "Beverages, tea, instant, decaffeinated, lemon, sweetened", "Beverages, tea, instant, lemon, sweetened, powder", "Beverages, Lemonade, powder"],
+	food: ["Alcoholic beverage, beer, light, BUD LIGHT", "Alcoholic beverage, beer, light, BUDWEISER SELECT", "Alcoholic beverage, beer, light, higher alcohol", "Alcoholic beverage, beer, light, low carb", "Alcoholic beverage, beer, regular, all", "Alcoholic beverage, beer, regular, BUDWEISER", "Alcoholic beverage, creme de menthe, 72 proof", "Alcoholic beverage, daiquiri, prepared-from-recipe", "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof", "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof"],
 	label: "Sugars(G)",
 	data: [99.8, 99.19, 97.81, 97.3, 97.15, 97.02, 95.45, 95.29, 95.29, 94.7]
 }]
