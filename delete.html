@@ -59,13 +59,13 @@
             <div class="col-25">
                 <label>Protein</label>
                 <select class="select1" disabled>
-                    <option id="pro" selected disabled>Choose..</option>
+                    <option id="prot" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
                 <label>Carbohydrates</label>
                 <select class="select1" disabled>
-                    <option id="car" selected disabled>Choose..</option>
+                    <option id="carb" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
@@ -75,13 +75,13 @@
                 </select>
             </div>
             <div class="col-25">
-                <label>Fats</label>
+                <label>Sugar</label>
                 <select class="select1" disabled>
                     <option id="sug" selected disabled>Choose..</option>
                 </select>
             </div>
             <div class="col-25">
-                <label>Fats</label>
+                <label>Energy</label>
                 <select class="select1" disabled>
                     <option id="eng" selected disabled>Choose..</option>
                 </select>
@@ -117,9 +117,11 @@
                 <script src="js/Chart.min.js"></script>
                 <script>
                     document.getElementById("food").innerHTML = localStorage.getItem("food");
-                    document.getElementById("nutr").innerHTML = localStorage.getItem("nutr");
-                    document.getElementById("unit").innerHTML = localStorage.getItem("unit");
-                    document.getElementById("value").innerHTML = localStorage.getItem("value");
+                    document.getElementById("prot").innerHTML = localStorage.getItem("prot");
+                    document.getElementById("carb").innerHTML = localStorage.getItem("carb");
+                    document.getElementById("fat").innerHTML = localStorage.getItem("fat");
+                    document.getElementById("sug").innerHTML = localStorage.getItem("sug");
+                    document.getElementById("eng").innerHTML = localStorage.getItem("eng");
                 </script>
 </body>
 
