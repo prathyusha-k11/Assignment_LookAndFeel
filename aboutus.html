@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            height: 100%
+        }
+
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+
+        .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/w3images/pizza.jpg");
+            min-height: 90%;
+        }
+    </style>
+</head>
+<body id="myPage">
+    <!-- Navbar -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="viewdata.html" class="w3-bar-item w3-button">View Data</a>
+            <a href="analyze.html" class="w3-bar-item w3-button">Analyze Data</a>
+            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+        </div>
+    </div>
+    <!--Add the content here-->
+    <!--View Data container-->
+    <div class="w3-container w3-blue-grey w3-grayscale-min w3-padding-64 w3-xlarge" , id="team">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Team</h1>
+            <h4 class="w3-center w3-xxlarge" style="margin-bottom:64px">Meet The Group</h4>
+        </div>
+   <div class="row center padding-64"><br>
+			<div class="third" style="border: 1px solid lightgrey; height:450px">
+				<img src="img/Prathyusha.jpg" alt="Prathyusha" style="width:45%" class="circle hover-opacity">
+				<h3>Prathyusha Kodumagulla</h3>
+				<a href="https://www.linkedin.com/in/prathyusha-k-076151b6/"><button class="button teal padding-small">LinkedIn</button></a>
+				<hr>
+				<p>Assignment 3: Created the data model using visio, about us page and made the pages responsive.</p>
+			</div>
+			<div class="third" style="border: 1px solid lightgrey;height:450px">
+				<img src="img/chaitu.jpg" alt="Chaitu" style="width:45%" class="circle hover-opacity">
+				<h3>Naga Chaitanya Chintalapudi</h3>
+				<a href="https://www.linkedin.com/in/naga-chaitanya-chintalapudi/"><button class="button teal padding-small">LinkedIn</button></a>
+				<hr>
+				<p>Assignment 3: Helped deciding the dataset to choose for the site, created the tables, charts and CRUD operations pages.</p>
+			</div>
+			<div class="third" style="border: 1px solid lightgrey;height:450px">
+				<img src="img/Mounica.jpg" alt="mounica" style="width:45%" class="circle hover-opacity">
+				<h3>Satya Mounica Kalidindi</h3>
+				<a href="https://www.linkedin.com/in/mounicakalidindi/"><button class="button teal padding-small">LinkedIn</button></a>
+				<hr>
+				<p>Assignment 3: Created the top and bottom navigation bars,home page and pages linked to the footer.</p>
+			</div>
+		</div>
+        </div>
+    	<hr>
+	<!--Technical Overview Pending-->
+	<!--Data Model-->
+	<div class="container padding-32 center">
+		<h2 class="w3-jumbo">Data Model</h2>
+		<img src="img/ERD.jpg" style="height:500px; border: 3px solid gray;">
+	</div>
+	<hr>
+	<!--Git Log Output-->
+	<div class="container padding-32 center" style="font-weight:bold">
+		<h2 class="w3-jumbo">Git Log Output</h2>
+		<h3 class="w3-xxlarge">This section presents the output of the following terminal command for each group member</h3>
+		<h6 class="w3-xlarge">git log --author="<Github_ID>" --pretty=tformat: --numstat </h6>
+		<div class=" row center">
+			<div class="third">
+                <p class=" center" >Prathyusha Kodumagulla</p>
+				<img style=" height : 500px"src="img/Prathyusha_git.jpg" />
+			</div>
+			<div class="third">
+				<p class=" center">Naga Chaitanya Chintalapudi</p>
+				<img style=" height : 500px"src="img/Prathyusha_git.jpg" />
+			</div>
+			<div class="third">
+                <p class=" center">Satya Mounica Kalidindi</p>
+				<img style=" height : 500px"src="img/Prathyusha_git.jpg" />
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!--GitHub Repo Link-->
+	<div class="container padding-64 center">
+		<p class="w3-xlarge">Visit <a href="https://github.com/prathyusha-k11/Assignment_LookAndFeel" style="color:blue;">our GitHub Repo </a>for the source code.</p>
+	</div>
+	<hr>
+        <!-- Footer -->
+        <div class="row padding-64">
+            <br>
+        </div>
+        <!-- Footer -->
+        <div class="bottom">
+            <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+
+                <a href="https://fdc.nal.usda.gov/" title="Source Data"> Source Data</a> | <a href="https://www.usf.edu/" title="USF">USF</a> | <a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a> | <a href="mailto:nagachaitanya.431@gmail.com" title="Contact Us">Contact Us</a>
+            </footer>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/Chart.min.js"></script>
+</body>
+
+</html>
